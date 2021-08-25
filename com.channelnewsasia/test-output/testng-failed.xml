@@ -8,6 +8,7 @@
           <include name="Scenario2method"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
+          <include name="Scenario1method"/>
         </methods>
       </class> <!-- channelnewsasia.com.Scenario1 -->
     </classes>

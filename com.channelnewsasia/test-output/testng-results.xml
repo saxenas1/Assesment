@@ -1,27 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31215" started-at="2021-08-25T05:00:57Z" finished-at="2021-08-25T05:01:28Z">
+  <suite name="Suite" duration-ms="217681" started-at="2021-08-25T08:12:42Z" finished-at="2021-08-25T08:16:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31215" started-at="2021-08-25T05:00:57Z" finished-at="2021-08-25T05:01:28Z">
+    <test name="Test" duration-ms="217681" started-at="2021-08-25T08:12:42Z" finished-at="2021-08-25T08:16:19Z">
       <class name="channelnewsasia.com.Scenario1">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="beforeMethod" is-config="true" duration-ms="4645" started-at="2021-08-25T10:30:57Z" finished-at="2021-08-25T10:31:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="beforeMethod" is-config="true" duration-ms="4790" started-at="2021-08-25T13:42:42Z" finished-at="2021-08-25T13:42:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="Scenario2method()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="Scenario2method" duration-ms="25308" started-at="2021-08-25T10:31:01Z" finished-at="2021-08-25T10:31:27Z">
+        <test-method status="FAIL" signature="Scenario1method()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="Scenario1method" duration-ms="83271" started-at="2021-08-25T13:42:46Z" finished-at="2021-08-25T13:44:10Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-	Ensure headlines are expected expected [111 new locally transmitted COVID-19 cases in Singapore, including 24 linked to dormitory in Woodlands] but found [Singapore's Yip Pin Xiu advances to women's 100m backstroke S2 final at Tokyo Paralympics]]]>
+	expected [Commentary: Singaporeâ€™s A330 tanker-transport plane offer can help in Afghanistan evacuation where every bit counts] but found [Biden aims for Aug 31 Afghanistan pullout as risk of attacks rises],
+	expected [Commentary: US withdrawal from Afghanistan spells end of China’s free ride on international security] but found [Suspect Afghan evacuees put focus on European security screening]]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-	Ensure headlines are expected expected [111 new locally transmitted COVID-19 cases in Singapore, including 24 linked to dormitory in Woodlands] but found [Singapore's Yip Pin Xiu advances to women's 100m backstroke S2 final at Tokyo Paralympics]
+	expected [Commentary: Singaporeâ€™s A330 tanker-transport plane offer can help in Afghanistan evacuation where every bit counts] but found [Biden aims for Aug 31 Afghanistan pullout as risk of attacks rises],
+	expected [Commentary: US withdrawal from Afghanistan spells end of China’s free ride on international security] but found [Suspect Afghan evacuees put focus on European security screening]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at channelnewsasia.com.Scenario1.Scenario2method(Scenario1.java:68)
+	at channelnewsasia.com.Scenario1.Scenario1method(Scenario1.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scenario1method -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="afterMethod" is-config="true" duration-ms="1392" started-at="2021-08-25T13:44:10Z" finished-at="2021-08-25T13:44:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="beforeMethod" is-config="true" duration-ms="3475" started-at="2021-08-25T13:44:11Z" finished-at="2021-08-25T13:44:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="Scenario2method()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="Scenario2method" duration-ms="88404" started-at="2021-08-25T13:44:15Z" finished-at="2021-08-25T13:45:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	expected [Top Japanese adviser blasts IOC's Bach as wider COVID-19 curbs planned] but found [Football: Premier League clubs will not release players for red-list internationals]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	expected [Top Japanese adviser blasts IOC's Bach as wider COVID-19 curbs planned] but found [Football: Premier League clubs will not release players for red-list internationals]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at channelnewsasia.com.Scenario1.Scenario2method(Scenario1.java:79)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -53,7 +105,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Scenario2method -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="afterMethod" is-config="true" duration-ms="1220" started-at="2021-08-25T10:31:27Z" finished-at="2021-08-25T10:31:28Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="afterMethod" is-config="true" duration-ms="1426" started-at="2021-08-25T13:45:43Z" finished-at="2021-08-25T13:45:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="beforeMethod" is-config="true" duration-ms="3450" started-at="2021-08-25T13:45:44Z" finished-at="2021-08-25T13:45:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="fetchWeather()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="fetchWeather" duration-ms="29819" started-at="2021-08-25T13:45:48Z" finished-at="2021-08-25T13:46:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchWeather -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:channelnewsasia.com.Scenario1@548a9f61]" name="afterMethod" is-config="true" duration-ms="1605" started-at="2021-08-25T13:46:18Z" finished-at="2021-08-25T13:46:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

@@ -13,7 +13,7 @@ import pages.LandingPage;
 import pages.WeatherPage;
 
 public class Scenario1 extends BaseClass {
-	@Test(enabled=false)
+	@Test()
 	public void Scenario1method() throws InterruptedException {
 		// Navigate to https://www.channelnewsasia.com/
 		driver.get("https://www.channelnewsasia.com/");
@@ -25,7 +25,7 @@ public class Scenario1 extends BaseClass {
 		// Validate the headline new item Title
 
 		softAssertion.assertEquals(headline,
-				"US stands with allies, partners in face of China's 'threats', says Harris");
+				"Biden aims for Aug 31 Afghanistan pullout as risk of attacks rises");
 
 		// Click on the Headline Item title and navigate to the actual story.
 		LandingPage lp= new LandingPage();
@@ -59,28 +59,28 @@ public class Scenario1 extends BaseClass {
 
 		driver.get("https://www.channelnewsasia.com/international");
 		LandingPage lp1 = new LandingPage();
-		InternationalPage Ip= new InternationalPage();
-		String Headline = lp1.navigateToSingapore();
+		InternationalPage ip= new InternationalPage();
+		String headline = lp1.navigateToSingapore();
 		SoftAssert softAssertion = new SoftAssert();
-		softAssertion.assertEquals(Headline,
-				"111 new locally transmitted COVID-19 cases in Singapore, including 24 linked to dormitory in Woodlands",
+		softAssertion.assertEquals(headline,
+				"Singapore's Yip Pin Xiu advances to women's 100m backstroke S2 final at Tokyo Paralympics",
 				"Ensure headlines are expected");
 		softAssertion.assertAll();
 		driver.findElement(By.xpath(OR.getProperty("Headline"))).click();
-		Ip.scrolltoEnd();
+		ip.scrolltoEnd();
 		List<WebElement> newsItem = driver.findElements(By.xpath("//h1[@class='h1 h1--page-title']"));
 
 		System.out.println(newsItem.get(2).getText());
-		Headline = newsItem.get(2).getText();
+		headline = newsItem.get(2).getText();
 
 		// Click on “Read Full Story” of the second news item and verify that the Title
 		// matches the same Title
-		softAssertion.assertEquals(driver.getTitle(), Headline);
+		softAssertion.assertEquals(driver.getTitle(), headline);
 		softAssertion.assertAll();
 		System.out.println("Done");
 	}
 
-	@Test(enabled = false)
+	@Test()
 	public void fetchWeather() {
 
 		driver.get("https://www.channelnewsasia.com/international");

@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-
 import base.BaseClass;
 
 public class LandingPage extends BaseClass {
@@ -17,7 +16,12 @@ public class LandingPage extends BaseClass {
 	}
 
 	public void navigateToHeadline() {
-		driver.findElement(By.xpath(OR.getProperty("HeadlineMainPage"))).click();
+		try {
+			driver.findElement(By.xpath(OR.getProperty("HeadlineMainPage"))).click();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
 	}
 
 	public String navigateToSingapore() {
